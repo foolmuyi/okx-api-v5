@@ -128,3 +128,15 @@ CONTROL_TRANSFER = '/api/v5/asset/subaccount/transfer'
 
 # status
 STATUS = '/api/v5/system/status'
+
+# NFT Marketplace
+NFT_DETAIL = '/api/v5/mktplace/nft/asset/detail'
+NFT_LIST = '/api/v5/mktplace/nft/asset/list'
+NFT_ASSET_LIST = '/api/v5/mktplace/nft/owner/asset-list'
+NFT_COLLECTION_DETAIL = '/api/v5/mktplace/nft/collection/detail'
+NFT_COLLECTION_LIST = '/api/v5/mktplace/nft/collection/list'
+NFT_LISTINGS = '/api/v5/mktplace/nft/markets/listings'
+NFT_OFFERS = '/api/v5/mktplace/nft/markets/offers'
+NFT_BUY = '/api/v5/mktplace/nft/markets/buy'
+NFT_TRADES = '/api/v5/mktplace/nft/markets/trades'
+NFT_CREATE_LISTING = '/api/v5/mktplace/nft/markets/create-listing'
