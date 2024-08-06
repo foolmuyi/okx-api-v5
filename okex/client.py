@@ -7,14 +7,14 @@ from . import consts as c, utils, exceptions
 
 class Client(object):
 
-    def __init__(self, api_key, api_secret_key, passphrase, use_server_time=False, flag='1', base_api='https://www.okx.com'):
+    def __init__(self, api_key, api_secret_key, passphrase, use_server_time=False, flag='1', proxies=None):
 
         self.API_KEY = api_key
         self.API_SECRET_KEY = api_secret_key
         self.PASSPHRASE = passphrase
         self.use_server_time = use_server_time
         self.flag = flag
-        self.client = httpx.Client(base_url=base_api, http2=True)
+        self.client = httpx.Client(http2=True, proxies=proxies)
 
     def _request(self, method, request_path, params):
 
