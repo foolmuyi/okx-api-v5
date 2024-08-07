@@ -1,0 +1,46 @@
+{
+    "1": {
+        "name": "Ethereum",
+        "rpc_url": "https://rpc.ankr.com/eth"
+    },
+    "137": {
+        "name": "Polygon",
+        "rpc_url": "https://polygon-rpc.com"
+    },
+    "56": {
+        "name": "Binance Smart Chain",
+        "rpc_url": "https://bsc-dataseed1.binance.org/"
+    },
+    "42161": {
+        "name": "Arbitrum One",
+        "rpc_url": "https://arb1.arbitrum.io/rpc"
+    },
+    "10": {
+        "name": "Optimism",
+        "rpc_url": "https://mainnet.optimism.io"
+    },
+    "324": {
+        "name": "zkSync Era",
+        "rpc_url": "https://mainnet.era.zksync.io"
+    },
+    "8453": {
+        "name": "Base",
+        "rpc_url": "https://mainnet.base.org"
+    },
+    "59144": {
+        "name": "Linea",
+        "rpc_url": "https://rpc.linea.build"
+    },
+    "204": {
+        "name": "opBNB",
+        "rpc_url": "https://opbnb-mainnet-rpc.bnbchain.org"
+    },
+    "534352": {
+        "name": "Scroll",
+        "rpc_url": "https://rpc.scroll.io"
+    },
+    "169": {
+        "name": "Manta Pacific",
+        "rpc_url": "https://pacific-rpc.manta.network/http"
+    }
+}
