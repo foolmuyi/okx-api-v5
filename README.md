@@ -1,3 +1,7 @@
+在原项目的基础上增加了对Marketplace中NFT市场的支持，具体使用示例见`mkt_example.py`文件，使用前需在项目路径下创建`.env`文件设置`API_KEY`、`SECRET_KEY`、`PASSPHRASE`和`PRIVATE_KEY`。
+
+---
+
 ### 如何使用？
 
 `python版本：3.6+`
@@ -79,7 +83,3 @@ passphrase = ""
     
             https://github.com/Rapptz/discord.py/issues/1996
             https://github.com/aaugustin/websockets/issues/587
-
----
-
-在原项目的基础上增加了对Marketplace中NFT市场的支持，具体使用示例见`mkt_example.py`文件，使用前需在项目路径下创建`.env`文件设置`api_key`、`secret_key`、`passphrase`和`PRIVATE_KEY`。
