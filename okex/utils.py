@@ -2,6 +2,8 @@ import hmac
 import base64
 import time
 import datetime
+import json
+import os
 from . import consts as c
 
 
@@ -53,3 +55,16 @@ def signature(timestamp, method, request_path, body, secret_key):
     d = mac.digest()
 
     return base64.b64encode(d)
+
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+chain_mapping_path = os.path.join(current_dir, 'chain_mapping.json')
+with open(chain_mapping_path, 'r') as f:
+    chain_mapping = json.load(f)
+
+def get_chain_name(chain_id):
+    return chain_mapping.get(str(chain_id), "Unknown Chain")
+
+def get_chain_id(chain_name):
+    reverse_mapping = {v: k for k, v in chain_mapping.items()}
+    return reverse_mapping.get(chain_name, "Unknown ID")

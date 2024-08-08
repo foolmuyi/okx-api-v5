@@ -1,0 +1,18 @@
+{
+    "1": "eth",
+    "56": "bsc",
+    "137": "polygon",
+    "43114": "avax",
+    "66": "oktc",
+    "42161": "arbitrum",
+    "42170": "arbitrum-nova",
+    "10": "optimism",
+    "324": "zksync-era",
+    "8453": "base",
+    "8217": "klaytn",
+    "59144": "linea",
+    "204": "opbnb",
+    "1101": "polygon-zkevm",
+    "534352": "scroll",
+    "169": "manta-pacific"
+}

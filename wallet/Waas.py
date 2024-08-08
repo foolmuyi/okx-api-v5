@@ -1,6 +1,7 @@
 import os
 from web3 import Web3
 from eth_account import Account
+from eth_account.messages import encode_typed_data
 from dotenv import load_dotenv
 from .chain_utils import get_rpc_url, get_chain_name
 
@@ -48,3 +49,10 @@ class Wallet(object):
         else:
             message = f"Transaction failed: {tx_hash.hex()}"
         return message
+
+    def get_signed_sign(self, full_message):
+        private_key = os.getenv('PRIVATE_KEY')
+        account = Account.from_key(private_key)
+        signable_message = encode_typed_data(full_message=full_message)
+        signed_message = account.sign_message(signable_message)
+        return signed_message.signature.hex()
