@@ -73,7 +73,7 @@ class MktplaceAPI(Client):
             order_action = [step for step in order_json['data']['steps'] if step['action'] == 'TakeOrders'][0]
             tx_item = order_action['items'][0]
             order_tx = {}
-            order_tx['chainId'] = tx_item['chain']
+            # order_tx['chainId'] = tx_item['chain']
             order_tx['contractAddress'] = tx_item['contractAddress']
             order_tx['inputData'] = tx_item['input']
             order_tx['value'] = tx_item['value']

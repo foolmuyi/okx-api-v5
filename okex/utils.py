@@ -63,8 +63,16 @@ with open(chain_mapping_path, 'r') as f:
     chain_mapping = json.load(f)
 
 def get_chain_name(chain_id):
-    return chain_mapping.get(str(chain_id), "Unknown Chain")
+    chain_name = chain_mapping.get(str(chain_id))
+    if chain_name == None:
+        raise ValueError('Unknown ChainId')
+    else:
+        return chain_name
 
 def get_chain_id(chain_name):
     reverse_mapping = {v: k for k, v in chain_mapping.items()}
-    return reverse_mapping.get(chain_name, "Unknown ID")
+    chain_id =  reverse_mapping.get(chain_name)
+    if chain_id == None:
+        raise ValueError('Unknown Chain Name')
+    else:
+        return chain_id

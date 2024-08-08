@@ -23,6 +23,5 @@ def get_chain_name(chain_id):
 def get_supported_chain_ids():
     return list(load_chain_config().keys())
 
-# 可选：添加一个函数来获取所有支持的链的信息
 def get_all_chain_info():
     return load_chain_config()

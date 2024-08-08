@@ -1,2 +1,4 @@
 requests
 httpx[http2]
+web3
+python-dotenv
